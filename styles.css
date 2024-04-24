@@ -1,23 +1,23 @@
 body{
   padding: 25px;
-  background-color: #414141;
-  color: #f4e9cd;
+  background-color: #2e2d33;
+  color: #e0d7c7;
 }
 
 a:link {
-  color: #77aca2;
+  color: #3fabaf;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: #468189;
+  color: #3fabaf;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: #9dbebb;
+  color: #fd5825;
   background-color: transparent;
   text-decoration: underline;
 }
