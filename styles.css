@@ -1,0 +1,23 @@
+body{
+  padding: 25px;
+  background-color: #414141;
+  color: #f4e9cd;
+}
+
+a:link {
+  color: #77aca2;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #468189;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9dbebb;
+  background-color: transparent;
+  text-decoration: underline;
+}
