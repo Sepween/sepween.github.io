@@ -1,7 +1,42 @@
+@font-face {
+    font-family: 'testFont';
+    src: url("JosefinSans-Light.ttf") format('truetype');
+}
+
 body{
-  padding: 25px;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #2e2d33;
   color: #e0d7c7;
+  text-align: left;
+  font-family: testFont, sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+}
+
+ul {
+  font-size: 20px;
 }
 
 a:link {
