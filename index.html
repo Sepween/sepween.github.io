@@ -1,65 +1,302 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yifei (Abby) Peng - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-  </head>
+</head>
+<body>
+    <header>
+        <h1>Yifei (Abby) Peng</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#game-dev">Game Development</a></li>
+                <li><a href="#ml-ai">ML & AI</a></li>
+                <li><a href="#graphics">Graphics & 3D</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <body>
-    <h1>Yifei (Abby) Peng</h1>
+    <main>
+        <section id="about" class="fade-in">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <div>
+                    <img src="/api/placeholder/400/400" alt="Profile Picture" class="profile-pic">
+                </div>
+                <div>
+                    <p>I'm a Computer Science and Cognitive Science student at the University of Michigan with a passion for game development, machine learning, and computer graphics. My goal is to create immersive digital experiences by combining technical expertise with creative design.</p>
+                    
+                    <p>I've interned at Alphabet Inc. as a Machine Learning Intern and Archosaur Games Inc. as a Game Developer Intern, where I gained valuable industry experience working on real-world projects.</p>
+                    
+                    <h3>Skills</h3>
+                    <div class="skills-container">
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Lua</span>
+                        <span class="skill-tag">Unity</span>
+                        <span class="skill-tag">Unreal Engine</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Computer Graphics</span>
+                        <span class="skill-tag">3D Reconstruction</span>
+                        <span class="skill-tag">Game Development</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Computer Vision</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <h2><a href="https://github.com/Sepween/rayfish_game_engine">Rayfish Game Engine</a></h2>
-    <p>A miniature game engine that allows you to easily add dynamic light sources.</p>
-    <img src="RayfishGameEngine.gif">
-    <p>Technologies used in the implementation:</p>
-    <ul>
-      <li>SDL: rendering pipeline</li>
-      <li>Box2D: colliders, rigidbodies, raycasting, physics-aspects</li>
-      <li>LuaBridge: connecting the hosting language Lua with C++</li>
-      <li>GLM: allowing for matrices and vector calculation</li>
-      <li>Rapid JSON: allowing the engine to read resource files formatted as JSON files</li>
-    </ul>
+        <section id="game-dev" class="fade-in">
+            <h2>Game Development</h2>
+            <div class="section-description">
+                <p>I'm passionate about creating engaging and innovative games. Here are some of my game development projects:</p>
+            </div>
+            
+            <div class="projects-container">
+                <div class="project-card">
+                    <img src="RayfishGameEngine.gif" alt="Rayfish Game Engine">
+                    <div class="content">
+                        <h3>Rayfish Game Engine</h3>
+                        <p>A miniature game engine that allows you to easily add dynamic light sources.</p>
+                        <div class="tech-stack">
+                            <strong>Technologies:</strong> SDL, Box2D, LuaBridge, GLM, Rapid JSON
+                        </div>
+                        <p><a href="https://github.com/Sepween/rayfish_game_engine" target="_blank">View on GitHub</a></p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="TheForgottenForest.png" alt="The Forgotten Forest">
+                    <div class="content">
+                        <h3>The Forgotten Forest</h3>
+                        <p>A two player platform game where players must work together and use their abilities to overcome obstacles.</p>
+                        <div class="tech-stack">
+                            <strong>My Contributions:</strong> Flying player mechanics, level progression, UI/UX design
+                        </div>
+                        <p><a href="https://sepween.itch.io/the-forgotten-forest" target="_blank">Play on itch.io</a></p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="/api/placeholder/400/300" alt="The Mirror">
+                    <div class="content">
+                        <h3>The Mirror</h3>
+                        <p>Help this adventurer to escape the ancient castle!</p>
+                        <p>Designed and developed from scratch, including programming and art creation.</p>
+                        <p><a href="https://sepween.itch.io/the-mirror" target="_blank">Play on itch.io</a></p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="/api/placeholder/400/300" alt="Zelda - Link and the Darkness">
+                    <div class="content">
+                        <h3>The Legend of Zelda - Link and the Darkness</h3>
+                        <p>Custom Zelda level where Link navigates through darkness with only a sword and torch.</p>
+                        <div class="tech-stack">
+                            <strong>My Contributions:</strong> Link's movement, pushable blocks, room transitions
+                        </div>
+                        <p><a href="https://sepween.itch.io/zelda-link-and-the-darkness" target="_blank">Play on itch.io</a></p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="Legacy.png" alt="Legacy">
+                    <div class="content">
+                        <h3>Legacy</h3>
+                        <p>A fighting game where you face your grandchild in a grandfather paradox scenario.</p>
+                        <p>Designed and implemented the UI/UX for the game.</p>
+                        <p><a href="https://rae-29.itch.io/legacy" target="_blank">Play on itch.io</a></p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="/api/placeholder/400/300" alt="Roll-a-ball">
+                    <div class="content">
+                        <h3>Roll-a-ball</h3>
+                        <p>A simple game where a hungry ghost collects burgers.</p>
+                        <p>Designed and implemented a simple level for this classic game concept.</p>
+                        <p><a href="https://sepween.itch.io/roll-a-ball" target="_blank">Play on itch.io</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <h2><a href="https://sepween.itch.io/the-forgotten-forest">The Forgotten Forest</a></h2>
-    <p>A two player platform game where players must work together and use their abilities wisely to overcome obstacles that neither could face alone.</p>
-    <img src="TheForgottenForest.png">
-    <p>I was in charge of implementing:</p>
-    <ul>
-      <li>The attacking and movement of the flying player</li>
-      <li>Lever and lasers</li>
-      <li>Level progression</li>
-    </ul>
-    <p>As well as:</p>
-    <ul>
-      <li>Designing and integrating UI/UX</li>
-      <li>Sourcing tilemaps and building the map</li>
-      <li>Creating posters, postcards, and trailers to promote the game</li>
-    </ul>
+        <section id="ml-ai" class="fade-in">
+            <h2>Machine Learning & AI</h2>
+            <div class="section-description">
+                <p>My projects in machine learning and artificial intelligence showcase my ability to develop and optimize models for various applications:</p>
+            </div>
+            
+            <div class="projects-container">
+                <div class="project-card slide-in-left">
+                    <img src="/api/placeholder/400/300" alt="Financial News Sentiment Analysis">
+                    <div class="content">
+                        <h3>Financial News Sentiment Analysis</h3>
+                        <p>Evaluated FinBERT and Twitter-RoBERTa models for predicting stock price movements based on news sentiment.</p>
+                        <div class="tech-stack">
+                            <strong>Technologies:</strong> NLP, BERT, RoBERTa, Python
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card slide-in-right">
+                    <img src="/api/placeholder/400/300" alt="GAN Development">
+                    <div class="content">
+                        <h3>Generative Adversarial Network (GAN)</h3>
+                        <p>Implemented a custom GAN architecture with optimized loss functions to generate photorealistic dog images.</p>
+                        <div class="tech-stack">
+                            <strong>Technologies:</strong> PyTorch, GANs, Data Augmentation
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card slide-in-left">
+                    <img src="/api/placeholder/400/300" alt="Prompt Engineering">
+                    <div class="content">
+                        <h3>Prompt Engineering for Math Reasoning</h3>
+                        <p>Evaluated zero-shot, few-shot, and role-playing prompting techniques for mathematical problem-solving.</p>
+                        <div class="tech-stack">
+                            <strong>Technologies:</strong> LLMs, Prompt Engineering, Math Reasoning
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card slide-in-right">
+                    <img src="/api/placeholder/400/300" alt="Diffusion Model">
+                    <div class="content">
+                        <h3>Diffusion Model Implementation</h3>
+                        <p>Implemented core components of a diffusion model, including forward process, denoising, and sampling techniques.</p>
+                        <div class="tech-stack">
+                            <strong>Technologies:</strong> PyTorch, Diffusion Models, Image Generation
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card slide-in-left">
+                    <img src="/api/placeholder/400/300" alt="Custom Tokenization">
+                    <div class="content">
+                        <h3>Custom Tokenization & Fine-Tuning</h3>
+                        <p>Developed a Byte Pair Encoding tokenizer for movie reviews and fine-tuned BERT and Mistral models.</p>
+                        <div class="tech-stack">
+                            <strong>Technologies:</strong> BPE, BERT, Mistral, Fine-tuning
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <h2><a href="https://sepween.itch.io/the-mirror">The Mirror</a></h2>
-    <p>Help this adventurer to escape the ancient castle!</p>
-    <p>I started from scratch to create the game, including designing, programming, and creating the arts.</p>
+        <section id="graphics" class="fade-in">
+            <h2>Graphics & 3D Reconstruction</h2>
+            <div class="section-description">
+                <p>My work in computer graphics and 3D reconstruction demonstrates my technical skills in creating realistic renderings and models:</p>
+            </div>
+            
+            <div class="projects-container">
+                <div class="project-card scale-in">
+                    <img src="/api/placeholder/400/300" alt="LERF Optimization">
+                    <div class="content">
+                        <h3>LERF Performance Optimization</h3>
+                        <p>Optimized Language Embedded Radiance Fields (LERF) model, achieving ~31% reduction in training time.</p>
+                        <div class="tech-stack">
+                            <strong>Technologies:</strong> LERF, 3D Reconstruction, LLMs
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card scale-in">
+                    <img src="/api/placeholder/400/300" alt="3D Reconstruction">
+                    <div class="content">
+                        <h3>3D Reconstruction with NeRF and Gaussian Splatting</h3>
+                        <p>Implemented Neural Radiance Fields and Gaussian Splatting algorithms for 3D reconstruction.</p>
+                        <div class="tech-stack">
+                            <strong>Technologies:</strong> NeRF, Gaussian Splatting, 3D Reconstruction
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card scale-in">
+                    <img src="/api/placeholder/400/300" alt="Path Tracing">
+                    <div class="content">
+                        <h3>Path Tracing for Photorealistic Rendering</h3>
+                        <p>Implemented a Monte Carlo path tracing algorithm to render a Cornell Box scene with realistic lighting.</p>
+                        <div class="tech-stack">
+                            <strong>Technologies:</strong> Path Tracing, Ray Tracing, Denoising
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <h2><a href="https://sepween.itch.io/zelda-link-and-the-darkness">The Legend of Zelda - Link and the Darkness (Unity Remaster)</a></h2>
-    <p>In this custom level of Zelda, link has to navigate through the darkness to find a way out! All he has is a sword and a torch, can he make it out alive?</p>
-    <p>I was in charge of implementing:</p>
-    <ul>
-      <li>Link's unique movement</li>
-      <li>The pushable blocks</li>
-      <li>Room transition</li>
-      <li>Old-man's room</li>
-      <li>Bow room</li>
-    </ul>
+        <section id="research" class="fade-in">
+            <h2>Research Projects</h2>
+            <div class="section-description">
+                <p>My involvement in academic research spans multiple disciplines including human posture generation, fault detection, hazard detection, and simulation:</p>
+            </div>
+            
+            <div class="research-item zoom-in">
+                <h3>SIM: Real-Time and Virtual Driving Simulator</h3>
+                <p><strong>Role:</strong> Sub-team Leader</p>
+                <p><strong>Duration:</strong> January 2024 - Present</p>
+                <p><strong>Description:</strong> Participating in a research team developing a cost-effective, easy-to-use driving simulator. Directing a sub-team of 4 people to develop a realistic and drivable road and world simulation using Unreal Engine 4 and Python.</p>
+            </div>
+            
+            <div class="research-item zoom-in">
+                <h3>Physics-aware Human Posture Generation Using GAN and Regularization</h3>
+                <p><strong>Status:</strong> Ongoing</p>
+                <p><strong>Description:</strong> Research focusing on generating physically plausible human postures using generative adversarial networks with physics-based regularization.</p>
+            </div>
+            
+            <div class="research-item zoom-in">
+                <h3>Tsinghua University Fault Detection</h3>
+                <p><strong>Status:</strong> Ongoing</p>
+                <p><strong>Description:</strong> Research collaboration with Tsinghua University focusing on fault detection methodologies.</p>
+            </div>
+            
+            <div class="research-item zoom-in">
+                <h3>Walbridge: Danger Hazard Detection</h3>
+                <p><strong>Status:</strong> Ongoing</p>
+                <p><strong>Description:</strong> Research project focused on developing hazard detection systems for safety applications.</p>
+            </div>
+        </section>
+    </main>
 
-    <h2><a href="https://rae-29.itch.io/legacy">Legacy</a></h2>
-    <p>A fighting game where you are fighting your grandchild! What will you do in this grandfather paradox?</p>
-    <img src="Legacy.png">
-    <p>I design and implemented UI/UX for the game.</p>
+    <footer id="contact" class="fade-in">
+        <h2>Contact</h2>
+        <div class="contact-links">
+            <a href="mailto:yifeip@umich.edu">Email</a>
+            <a href="https://github.com/Sepween" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+            <a href="https://itch.io/profile/sepween" target="_blank">Itch.io</a>
+        </div>
+        <p>&copy; 2025 Yifei (Abby) Peng. All rights reserved.</p>
+    </footer>
 
-    <h2><a href="https://sepween.itch.io/roll-a-ball">Roll-a-ball</a></h2>
-    <p>A simple roll-a-ball where the little ghost is hungry and wants some burgers!</p>
-    <p>I designed and implemented a simple level for Roll-a-ball.</p>
-
-  </body>
-
+    <!-- Intersection Observer for animations (minimal JavaScript) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // This small script enables animations based on scroll position
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            // Observe all elements with animation classes
+            document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in, .zoom-in').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
 </html>
