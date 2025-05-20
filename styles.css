@@ -1,7 +1,7 @@
 /* Base Styles and Variables */
 @font-face {
     font-family: 'testFont';
-    src: url("JosefinSans-Light.ttf") format('truetype');
+    src: url("font/JosefinSans-Light.ttf") format('truetype');
 }
 
 :root {
@@ -30,25 +30,25 @@ body {
 
 /* Typography */
 h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
     text-align: center;
     margin-bottom: 2rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     border-bottom: 2px solid var(--accent-color);
     padding-bottom: 0.5rem;
     margin-top: 3rem;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: var(--accent-color);
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 /* Navigation */
@@ -68,7 +68,7 @@ nav ul {
 }
 
 nav a {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     transition: all 0.3s ease;
@@ -136,7 +136,7 @@ a:hover {
 
 .project-card .tech-stack {
     margin-top: auto;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: rgba(224, 215, 199, 0.7);
 }
 
@@ -152,7 +152,7 @@ img {
 
 /* Lists */
 ul {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     padding-left: 1.5rem;
 }
 
@@ -195,7 +195,7 @@ section {
     background: rgba(63, 171, 175, 0.2);
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
@@ -298,11 +298,11 @@ footer {
     }
     
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.7rem;
     }
     
     h2 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     
     body {
