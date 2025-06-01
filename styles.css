@@ -4,6 +4,20 @@
     src: url("font/JosefinSans-Light.ttf") format('truetype');
 }
 
+@media (max-width: 480px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 0.6rem;
+        max-width: 100%;
+    }
+    
+    .skill-tag {
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
 :root {
     --bg-color: #2e2d33;
     --text-color: #e0d7c7;
@@ -718,6 +732,13 @@ footer {
 }
 
 /* Media Queries */
+@media (max-width: 1024px) {
+    .skills-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.8rem;
+    }
+}
+
 @media (max-width: 768px) {
     :root {
         --nav-height: 100px; /* Increase nav height on mobile to account for wrapped navigation */
@@ -738,7 +759,13 @@ footer {
     }
 
     .skills-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+    
+    .skill-tag {
+        padding: 0.6rem 0.8rem;
+        font-size: 1rem;
     }
 
     .projects-container {
