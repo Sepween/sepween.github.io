@@ -32,7 +32,7 @@
 
                 <!-- Interactive Expertise Cards -->
                 <div class="expertise-grid">
-                    <div class="expertise-card">
+                    <div class="expertise-card" data-section="game-dev">
                         <span class="card-icon">🎮</span>
                         <div class="card-title">Game Development</div>
                         <div class="card-description">Creating engaging interactive experiences from concept to completion</div>
@@ -44,7 +44,7 @@
                         </div>
                     </div>
 
-                    <div class="expertise-card">
+                    <div class="expertise-card" data-section="ml-ai">
                         <span class="card-icon">🤖</span>
                         <div class="card-title">Machine Learning</div>
                         <div class="card-description">Developing intelligent systems for real-world applications</div>
@@ -56,7 +56,7 @@
                         </div>
                     </div>
 
-                    <div class="expertise-card">
+                    <div class="expertise-card" data-section="graphics">
                         <span class="card-icon">🎨</span>
                         <div class="card-title">Graphics & 3D</div>
                         <div class="card-description">Capturing and reconstructing the real world through cutting-edge rendering and 3D techniques</div>
@@ -68,7 +68,7 @@
                         </div>
                     </div>
 
-                    <div class="expertise-card">
+                    <div class="expertise-card" data-section="research">
                         <span class="card-icon">🔬</span>
                         <div class="card-title">Research</div>
                         <div class="card-description">Exploring the frontiers of technology through academic and industry research</div>
@@ -138,7 +138,9 @@
                         <div class="tech-stack">
                             <strong>Technologies:</strong> SDL, Box2D, LuaBridge, GLM, Rapid JSON
                         </div>
-                        <p><a href="https://github.com/Sepween/rayfish_game_engine" target="_blank">View on GitHub</a></p>
+                        <div class="action-buttons">
+                            <a href="https://github.com/Sepween/rayfish_game_engine" class="action-btn" target="_blank">View on GitHub</a>
+                        </div>
                     </div>
                 </div>
                 
@@ -150,7 +152,9 @@
                         <div class="tech-stack">
                             <strong>My Contributions:</strong> Flying player mechanics, level progression, UI/UX design
                         </div>
-                        <p><a href="https://sepween.itch.io/the-forgotten-forest" target="_blank">Play on itch.io</a></p>
+                        <div class="action-buttons">
+                            <a href="https://sepween.itch.io/the-forgotten-forest" class="action-btn" target="_blank">Play on itch.io</a>
+                        </div>
                     </div>
                 </div>
                 
@@ -160,7 +164,9 @@
                         <h3>The Mirror</h3>
                         <p>Help this adventurer to escape the ancient castle!</p>
                         <p>Designed and developed from scratch, including programming and art creation.</p>
-                        <p><a href="https://sepween.itch.io/the-mirror" target="_blank">Play on itch.io</a></p>
+                        <div class="action-buttons">
+                            <a href="https://sepween.itch.io/the-mirror" class="action-btn" target="_blank">Play on itch.io</a>
+                        </div>
                     </div>
                 </div>
                 
@@ -172,7 +178,9 @@
                         <div class="tech-stack">
                             <strong>My Contributions:</strong> Link's movement, pushable blocks, room transitions
                         </div>
-                        <p><a href="https://sepween.itch.io/zelda-link-and-the-darkness" target="_blank">Play on itch.io</a></p>
+                        <div class="action-buttons">
+                            <a href="https://sepween.itch.io/zelda-link-and-the-darkness" class="action-btn" target="_blank">Play on itch.io</a>
+                        </div>
                     </div>
                 </div>
                 
@@ -182,7 +190,9 @@
                         <h3>Legacy</h3>
                         <p>A fighting game where you face your grandchild in a grandfather paradox scenario.</p>
                         <p>Designed and implemented the UI/UX for the game.</p>
-                        <p><a href="https://rae-29.itch.io/legacy" target="_blank">Play on itch.io</a></p>
+                        <div class="action-buttons">
+                            <a href="https://rae-29.itch.io/legacy" class="action-btn" target="_blank">Play on itch.io</a>
+                        </div>
                     </div>
                 </div>
                 
@@ -192,7 +202,9 @@
                         <h3>Roll-a-ball</h3>
                         <p>A simple game where a hungry ghost collects burgers.</p>
                         <p>Designed and implemented a simple level for this classic game concept.</p>
-                        <p><a href="https://sepween.itch.io/roll-a-ball" target="_blank">Play on itch.io</a></p>
+                        <div class="action-buttons">
+                            <a href="https://sepween.itch.io/roll-a-ball" class="action-btn" target="_blank">Play on itch.io</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -205,57 +217,79 @@
             </div>
             
             <div class="projects-container">
-                <div class="project-card">
-                    <img src="api/placeholder/400/300" alt="Financial News Sentiment Analysis">
+                <div class="project-card-tech">
+                    <div class="tech-header">
+                        <span class="tech-badge">NLP</span>
+                        <span class="tech-badge">BERT</span>
+                        <span class="tech-badge">RoBERTa</span>
+                        <span class="tech-badge">Python</span>
+                    </div>
                     <div class="content">
                         <h3>Financial News Sentiment Analysis</h3>
                         <p>Evaluated FinBERT and Twitter-RoBERTa models for predicting stock price movements based on news sentiment.</p>
-                        <div class="tech-stack">
-                            <strong>Technologies:</strong> NLP, BERT, RoBERTa, Python
+                        <div class="action-buttons">
+                            <button class="action-btn disabled" disabled>GitHub Coming Soon</button>
                         </div>
                     </div>
                 </div>
                 
-                <div class="project-card">
-                    <img src="api/placeholder/400/300" alt="GAN Development">
+                <div class="project-card-tech">
+                    <div class="tech-header">
+                        <span class="tech-badge">PyTorch</span>
+                        <span class="tech-badge">GANs</span>
+                        <span class="tech-badge">Data Augmentation</span>
+                    </div>
                     <div class="content">
                         <h3>Generative Adversarial Network (GAN)</h3>
                         <p>Implemented a custom GAN architecture with optimized loss functions to generate photorealistic dog images.</p>
-                        <div class="tech-stack">
-                            <strong>Technologies:</strong> PyTorch, GANs, Data Augmentation
+                        <div class="action-buttons">
+                            <button class="action-btn disabled" disabled>GitHub Coming Soon</button>
                         </div>
                     </div>
                 </div>
                 
-                <div class="project-card">
-                    <img src="api/placeholder/400/300" alt="Prompt Engineering">
+                <div class="project-card-tech">
+                    <div class="tech-header">
+                        <span class="tech-badge">LLMs</span>
+                        <span class="tech-badge">Prompt Engineering</span>
+                        <span class="tech-badge">Math Reasoning</span>
+                    </div>
                     <div class="content">
                         <h3>Prompt Engineering for Math Reasoning</h3>
                         <p>Evaluated zero-shot, few-shot, and role-playing prompting techniques for mathematical problem-solving.</p>
-                        <div class="tech-stack">
-                            <strong>Technologies:</strong> LLMs, Prompt Engineering, Math Reasoning
+                        <div class="action-buttons">
+                            <button class="action-btn disabled" disabled>GitHub Coming Soon</button>
                         </div>
                     </div>
                 </div>
                 
-                <div class="project-card">
-                    <img src="api/placeholder/400/300" alt="Diffusion Model">
+                <div class="project-card-tech">
+                    <div class="tech-header">
+                        <span class="tech-badge">PyTorch</span>
+                        <span class="tech-badge">Diffusion Models</span>
+                        <span class="tech-badge">Image Generation</span>
+                    </div>
                     <div class="content">
                         <h3>Diffusion Model Implementation</h3>
                         <p>Implemented core components of a diffusion model, including forward process, denoising, and sampling techniques.</p>
-                        <div class="tech-stack">
-                            <strong>Technologies:</strong> PyTorch, Diffusion Models, Image Generation
+                        <div class="action-buttons">
+                            <button class="action-btn disabled" disabled>GitHub Coming Soon</button>
                         </div>
                     </div>
                 </div>
                 
-                <div class="project-card">
-                    <img src="api/placeholder/400/300" alt="Custom Tokenization">
+                <div class="project-card-tech">
+                    <div class="tech-header">
+                        <span class="tech-badge">BPE</span>
+                        <span class="tech-badge">BERT</span>
+                        <span class="tech-badge">Mistral</span>
+                        <span class="tech-badge">Fine-tuning</span>
+                    </div>
                     <div class="content">
                         <h3>Custom Tokenization & Fine-Tuning</h3>
                         <p>Developed a Byte Pair Encoding tokenizer for movie reviews and fine-tuned BERT and Mistral models.</p>
-                        <div class="tech-stack">
-                            <strong>Technologies:</strong> BPE, BERT, Mistral, Fine-tuning
+                        <div class="action-buttons">
+                            <button class="action-btn disabled" disabled>GitHub Coming Soon</button>
                         </div>
                     </div>
                 </div>
@@ -269,35 +303,47 @@
             </div>
             
             <div class="projects-container">
-                <div class="project-card">
-                    <img src="api/placeholder/400/300" alt="LERF Optimization">
+                <div class="project-card-tech">
+                    <div class="tech-header">
+                        <span class="tech-badge">LERF</span>
+                        <span class="tech-badge">3D Reconstruction</span>
+                        <span class="tech-badge">LLMs</span>
+                    </div>
                     <div class="content">
                         <h3>LERF Performance Optimization</h3>
                         <p>Optimized Language Embedded Radiance Fields (LERF) model, achieving ~31% reduction in training time.</p>
-                        <div class="tech-stack">
-                            <strong>Technologies:</strong> LERF, 3D Reconstruction, LLMs
+                        <div class="action-buttons">
+                            <button class="action-btn disabled" disabled>GitHub Coming Soon</button>
                         </div>
                     </div>
                 </div>
                 
-                <div class="project-card">
-                    <img src="api/placeholder/400/300" alt="3D Reconstruction">
+                <div class="project-card-tech">
+                    <div class="tech-header">
+                        <span class="tech-badge">NeRF</span>
+                        <span class="tech-badge">Gaussian Splatting</span>
+                        <span class="tech-badge">3D Reconstruction</span>
+                    </div>
                     <div class="content">
                         <h3>3D Reconstruction with NeRF and Gaussian Splatting</h3>
                         <p>Implemented Neural Radiance Fields and Gaussian Splatting algorithms for 3D reconstruction.</p>
-                        <div class="tech-stack">
-                            <strong>Technologies:</strong> NeRF, Gaussian Splatting, 3D Reconstruction
+                        <div class="action-buttons">
+                            <button class="action-btn disabled" disabled>GitHub Coming Soon</button>
                         </div>
                     </div>
                 </div>
                 
-                <div class="project-card">
-                    <img src="api/placeholder/400/300" alt="Path Tracing">
+                <div class="project-card-tech">
+                    <div class="tech-header">
+                        <span class="tech-badge">Path Tracing</span>
+                        <span class="tech-badge">Ray Tracing</span>
+                        <span class="tech-badge">Denoising</span>
+                    </div>
                     <div class="content">
                         <h3>Path Tracing for Photorealistic Rendering</h3>
                         <p>Implemented a Monte Carlo path tracing algorithm to render a Cornell Box scene with realistic lighting.</p>
-                        <div class="tech-stack">
-                            <strong>Technologies:</strong> Path Tracing, Ray Tracing, Denoising
+                        <div class="action-buttons">
+                            <button class="action-btn disabled" disabled>GitHub Coming Soon</button>
                         </div>
                     </div>
                 </div>
@@ -311,28 +357,69 @@
             </div>
             
             <div class="research-item">
-                <h3>SIM: Real-Time and Virtual Driving Simulator</h3>
-                <p><strong>Role:</strong> Sub-team Leader</p>
-                <p><strong>Duration:</strong> January 2024 - April 2025</p>
-                <p><strong>Description:</strong> Participating in a research team developing a cost-effective, easy-to-use driving simulator. Directing a sub-team of 4 people to develop a realistic and drivable road and world simulation using Unreal Engine 4 and Python.</p>
-            </div>
-            
-            <div class="research-item">
-                <h3>Physics-aware Human Posture Generation Using Physics-Informed Neural Network</h3>
-                <p><strong>Status:</strong> Ongoing</p>
+                <div class="research-header">
+                    <h3>Physics-aware Human Posture Generation Using Physics-Informed Neural Network</h3>
+                    <div class="research-meta">
+                        <span class="research-status ongoing">Ongoing</span>
+                    </div>
+                </div>
                 <p><strong>Description:</strong> Research focusing on generating physically plausible human postures using physics-based regularization.</p>
+                <div class="research-skills">
+                    <span class="skill-tag">Physics-Informed Neural Networks</span>
+                    <span class="skill-tag">Human Motion</span>
+                    <span class="skill-tag">Deep Learning</span>
+                    <span class="skill-tag">Biomechanics</span>
+                </div>
             </div>
             
             <div class="research-item">
-                <h3>Tsinghua University Bearing System Fault Detection</h3>
-                <p><strong>Status:</strong> Ongoing</p>
+                <div class="research-header">
+                    <h3>Tsinghua University Bearing System Fault Detection</h3>
+                    <div class="research-meta">
+                        <span class="research-status ongoing">Ongoing</span>
+                    </div>
+                </div>
                 <p><strong>Description:</strong> Participating in a Tsinghua University research team focusing on bearing system fault detection using Physics-Informed Neural Network.</p>
+                <div class="research-skills">
+                    <span class="skill-tag">Physics-Informed Neural Networks</span>
+                    <span class="skill-tag">Fault Detection</span>
+                    <span class="skill-tag">Signal Processing</span>
+                    <span class="skill-tag">Industrial Systems</span>
+                </div>
             </div>
             
             <div class="research-item">
-                <h3>Walbridge: Danger Hazard Detection</h3>
-                <p><strong>Status:</strong> Ongoing</p>
+                <div class="research-header">
+                    <h3>Walbridge: Danger Hazard Detection</h3>
+                    <div class="research-meta">
+                        <span class="research-status ongoing">Ongoing</span>
+                    </div>
+                </div>
                 <p><strong>Description:</strong> Research project collaborating with Walbridge focused on developing hazard detection systems for construction site safety applications.</p>
+                <div class="research-skills">
+                    <span class="skill-tag">Computer Vision</span>
+                    <span class="skill-tag">Object Detection</span>
+                    <span class="skill-tag">Safety Systems</span>
+                    <span class="skill-tag">Industry Collaboration</span>
+                </div>
+            </div>
+
+            <div class="research-item">
+                <div class="research-header">
+                    <h3>SIM: Real-Time and Virtual Driving Simulator</h3>
+                    <div class="research-meta">
+                        <span class="research-role">Sub-team Leader</span>
+                        <span class="research-duration">January 2024 - April 2025</span>
+                    </div>
+                </div>
+                <p><strong>Description:</strong> Participating in a research team developing a cost-effective, easy-to-use driving simulator. Directing a sub-team of 4 people to develop a realistic and drivable road and world simulation using Unreal Engine 4 and Python.</p>
+                <div class="research-skills">
+                    <span class="skill-tag">Unreal Engine</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Team Leadership</span>
+                    <span class="skill-tag">Simulation</span>
+                    <span class="skill-tag">Real-time Rendering</span>
+                </div>
             </div>
         </section>
     </main>
@@ -366,6 +453,7 @@
     <!-- Intersection Observer for animations -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Existing intersection observer for animations
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -376,6 +464,19 @@
             
             document.querySelectorAll('.fade-in, .research-item').forEach(el => {
                 observer.observe(el);
+            });
+
+            // NEW: Expertise card navigation functionality
+            document.querySelectorAll('.expertise-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    const section = this.getAttribute('data-section');
+                    if (section) {
+                        document.getElementById(section).scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
             });
         });
     </script>

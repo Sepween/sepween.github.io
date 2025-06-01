@@ -241,7 +241,7 @@ a:hover {
 }
 
 .expertise-card:hover .tech-tag {
-    background: rgba(63, 171, 175, 0.4);
+    background: rgba(63, 171, 175, 0.2);
     border: 1px solid var(--accent-color);
 }
 
@@ -371,6 +371,122 @@ a:hover {
     color: rgba(224, 215, 199, 0.7);
 }
 
+/* NEW: Tech Stack Emphasis Project Cards */
+.project-card-tech {
+    background: var(--section-bg);
+    border-radius: 15px;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tech-header {
+    background: linear-gradient(135deg, rgba(63, 171, 175, 0.2), rgba(253, 88, 37, 0.1));
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    min-height: 80px;
+    align-items: center;
+}
+
+.tech-badge {
+    background: rgba(63, 171, 175, 0.4);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.project-card-tech:hover .tech-badge {
+    background: rgba(63, 171, 175, 0.4);
+    border: 1px solid var(--accent-color);
+}
+
+.project-card-tech .content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card-tech:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card-tech h3 {
+    margin-top: 0;
+}
+
+/* NEW: Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    background: var(--accent-color);
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid var(--accent-color);
+    text-align: center;
+    flex: 1;
+    min-width: 120px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: testFont, sans-serif;
+}
+
+.action-btn:hover {
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
+    transform: translateY(-2px);
+    color: white;
+    text-decoration: none;
+}
+
+.action-btn.secondary {
+    background: transparent;
+    color: var(--accent-color);
+}
+
+.action-btn.secondary:hover {
+    background: var(--accent-color);
+    color: white;
+}
+
+/* NEW: Disabled Button State */
+.action-btn.disabled,
+.action-btn:disabled {
+    background: rgba(63, 171, 175, 0.3);
+    color: rgba(224, 215, 199, 0.5);
+    border-color: rgba(63, 171, 175, 0.3);
+    cursor: not-allowed;
+    transform: none;
+}
+
+.action-btn.disabled:hover,
+.action-btn:disabled:hover {
+    background: rgba(63, 171, 175, 0.3);
+    color: rgba(224, 215, 199, 0.5);
+    border-color: rgba(63, 171, 175, 0.3);
+    transform: none;
+    text-decoration: none;
+}
+
 /* Images */
 img {
     border-radius: 10px;
@@ -400,27 +516,97 @@ section {
     margin-bottom: 2rem;
 }
 
-/* Research Section - UPDATED TO MATCH PROJECT CARDS */
+/* Research Section - ENHANCED WITH NEW DESIGN */
 .research-item {
     background: var(--section-bg);
-    padding: 1.5rem;
-    border-radius: 10px;
+    padding: 2rem;
+    border-radius: 15px;
     margin-bottom: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease, opacity var(--animation-duration) ease;
     opacity: 0;
     transform: translateY(20px);
-    /* Ensure initial position for visible state */
+    border: 2px solid transparent;
 }
 
-.research-item h3 {
-    margin-top: 0;
-}
-
-/* FIXED: Research items now have the same hover animation as project cards */
 .research-item:hover {
     transform: translateY(-5px) !important;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: rgba(63, 171, 175, 0.3);
+}
+
+/* NEW: Research Header Layout */
+.research-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.research-header h3 {
+    margin: 0;
+    line-height: 1.3;
+}
+
+.research-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.research-role {
+    background: rgba(253, 88, 37, 0.2);
+    color: var(--accent-hover);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.research-duration {
+    background: rgba(63, 171, 175, 0.2);
+    color: var(--accent-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.research-status {
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.research-status.ongoing {
+    background: rgba(46, 204, 113, 0.2);
+    color: #2ecc71;
+}
+
+.research-status.completed {
+    background: rgba(52, 152, 219, 0.2);
+    color: #3498db;
+}
+
+/* NEW: Research Skills Section */
+.research-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(224, 215, 199, 0.1);
+}
+
+.research-skills .skill-tag {
+    background: rgba(63, 171, 175, 0.15);
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+}
+
+.research-skills .skill-tag:hover {
+    background: rgba(63, 171, 175, 0.3);
 }
 
 /* Footer / Contact Section */
@@ -559,6 +745,20 @@ footer {
         grid-template-columns: 1fr;
     }
     
+    .action-buttons {
+        flex-direction: column;
+    }
+    
+    .action-btn {
+        flex: none;
+    }
+    
+    .research-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
     h1 {
         font-size: 2.7rem;
     }
@@ -587,7 +787,7 @@ footer {
         color: black;
     }
     
-    .project-card, .research-item {
+    .project-card, .project-card-tech, .research-item {
         break-inside: avoid;
         page-break-inside: avoid;
     }
