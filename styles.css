@@ -526,10 +526,6 @@ section {
                 transform var(--animation-duration) ease;
 }
 
-.section-description {
-    margin-bottom: 2rem;
-}
-
 /* Research Section - ENHANCED WITH NEW DESIGN */
 .research-item {
     background: var(--section-bg);
@@ -570,8 +566,8 @@ section {
 }
 
 .research-role {
-    background: rgba(253, 88, 37, 0.2);
-    color: var(--accent-hover);
+    background: rgba(52, 152, 219, 0.2);
+    color: #3498db;
     padding: 0.3rem 0.8rem;
     border-radius: 15px;
     font-size: 0.9rem;
@@ -599,8 +595,8 @@ section {
 }
 
 .research-status.completed {
-    background: rgba(52, 152, 219, 0.2);
-    color: #3498db;
+    background: rgba(253, 88, 37, 0.2);
+    color: var(--accent-hover);
 }
 
 /* NEW: Research Skills Section */
